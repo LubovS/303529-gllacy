@@ -9,9 +9,7 @@
 	    <div class="container">
 		    <div class="header-left">
 		      <div class="site-logo">
-		        <a href="#">
-		      	  <img src="http://placehold.it/150x100" width="150" height="100" alt="Глейсишоп">
-		      	</a>
+		        <img src="http://placehold.it/150x100" width="150" height="100" alt="Глейсишоп">
 		      </div>
 		      <nav class="main-navigation">
 		      	<ul>
@@ -29,13 +27,26 @@
 		    </div>
 		    <div class="header-right">
 		      <div class="search">
-		        <form action="#" method="get">
-		          <input type="search" name="search">
-		          <button type="submit"></button>
-		        </form>
+		        <a class="search-icon" href="#"><img src="#" alt="Поиск"></a>
+		        <div class="search-inner">
+		          <form action="#" method="get">
+		            <input type="search" name="search">
+		            <button type="submit"></button>
+		          </form>
+		        </div>
 		      </div>
-		      <a class="login" href="#">Вход</a>
-		      <a class="basket-data" href="#">Корзина</a>
+		      <div class="login">
+		        <a class="login-icon" href="#"><img src="#" alt="Логин"></a>
+		        <div class="login-inner">
+		          <a href="#">Вход</a>
+		        </div>
+		      </div>
+		      <div class="basket-data">
+		        <a class="basket-icon" href="#"><img src="#" alt="Корзина"></a>
+		        <div class="basket-inner">
+		          <a href="#">Корзина</a>
+		        </div>
+		      </div>
 		      <div class="info-box">
 		        <div class="working-time">
 		          <span>С 10 до 20, ежедневно</span>
@@ -70,52 +81,37 @@
 	      </article>
 	    </section>
 	    <section class="popular">
-	      <article class="popular-item">
+	      <article class="item popular-item">
 	        <div class="item-img">
 	          <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное с апельсиновым джемом и  цитрусовой стружкой">
 	        </div>
-	        <!--<div class="img-hit">
-	          <img src="http://placehold.it/150x100" width="150" height="100" alt="хит">
-	        </div>
-	        -->
-	        <a href="#"><h2>Сливочное с апельсиновым джемом и цитрусовой стружкой</h2></a>
-	        <span class="price">310 р/кг</span>
+	        <div class="price">310 р/кг</div>
+	        <h2>Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+	        <a class="btn" href="#">Быстрый просмотр</a>
 	      </article>
-	      <article class="popular-item">
+	      <article class="item popular-item">
 	        <div class="item-img">
 	          <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное-кофейное с кусочками шоколада">
 	        </div>
-	        <!--
-	        <div class="img-hit">
-	          <img src="http://placehold.it/150x100" width="150" height="100" alt="хит">
-	        </div>
-	        -->
-	        <a href="#"><h2>Сливочное-кофейное с кусочками шоколада</h2></a>
-	        <span class="price">380 р/кг</span>
+	        <div class="price">380 р/кг</div>
+	        <h2>Сливочное-кофейное с кусочками шоколада</h2>
+	        <a class="btn" href="#">Быстрый просмотр</a>
 	      </article>
-	      <article class="popular-item">
+	      <article class="item popular-item">
 	       <div class="item-img">
 	         <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 	       </div>
-	       <!--
-	       <div class="img-hit">
-	         <img src="http://placehold.it/150x100" width="150" height="100" alt="хит">
-	       </div>
-	       -->
-	       <a href="#"><h2>Сливочно-клубничное с присыпкой из белого шоколада</h2></a>
-	       <span class="price">355 р/кг</span>
+	       <div class="price">355 р/кг</div>
+	       <h2>Сливочно-клубничное с присыпкой из белого шоколада</h2>
+	       <a class="btn" href="#">Быстрый просмотр</a>
 	     </article>
-	     <article class="popular-item">
+	     <article class="item popular-item">
 	       <div class="item-img">
 	         <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное крем-брюле с карамельной подливкой">
 	       </div>
-	       <!--
-	       <div class="img-hit">
-	         <img src="http://placehold.it/150x100" width="150" height="100" alt="хит">
-	       </div>
-	       -->
-	       <a href="#"><h2>Сливочное крем-брюле с карамельной подливкой</h2></a>
-	       <span class="price">415 р/кг</span>
+	       <div class="price">415 р/кг</div>
+	       <h2>Сливочное крем-брюле с карамельной подливкой</h2>
+	       <a class="btn" href="#">Быстрый просмотр</a>
 	     </article>
 	    </section> 	
 	    <section class="features">
@@ -137,14 +133,16 @@
 	      	</li>
 	      </ul>
 	    </section>
-	    <article class="post-new">
-	      <span>Новое в нашем блоге</span>
-	    	<div class="post-preview">
-	    	  <a href="#">
-	    	  	<h2>10 способов сервировки фруктовых щербетов к столу</h2>
-	    	  </a>	
-	    	</div>
-	    </article>
+	    <div class="post-blog">
+	      <article class="post-new">
+	        <span>Новое в нашем блоге</span>
+	    	  <div class="post-preview">
+	    	    <a href="#">
+	    	  	  <h2>10 способов сервировки фруктовых щербетов к столу</h2>
+	    	    </a>	
+	    	  </div>
+	      </article>
+	    </div>
 	    <article class="follow-by-email">
 	    	<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 	    	<div class="follow-by-email-inner">
@@ -156,50 +154,49 @@
 	    	  </form>	
 	    	</div>
 	    </article>
-	    <div class="map">
-	    <!--Здесь будет карта -->
-	    </div>
-	    <div class="index-content-right">
-	      <span class="index-content-title">Адрес главного офиса и офлайн магазина:</span><br>
-	      <span class="adress">
-	        ул. Большая Конюшенная<br>
-	        19/8, Санкт-Петербург<br>
-	      </span>
-	      <span class="index-content-title">Для заказов по телефону:</span><br>
-	      <span class="phones">8(812)450-25-25</span><br>
-	      <span class="working-time">(С 10 до 20, ежедневно)</span><br>
-	      <a class="btn" href="#">Форма обратной связи</a>
-	    </div>
+	    <div class="index-content">
+		    <div class="map">
+		    </div>
+		    <div class="index-content-right">
+		      <div class="index-content-title">Адрес главного офиса и офлайн магазина:</div>
+		      <div class="adress">
+		        ул. Большая Конюшенная
+		        19/8, Санкт-Петербург
+		      </div>
+		      <div class="index-content-title">Для заказов по телефону:</div>
+		      <div class="phones">8(812)450-25-25</div>
+		      <div class="working-time">(С 10 до 20, ежедневно)</div>
+		      <a class="btn" href="#">Форма обратной связи</a>
+		    </div>
+		  </div>
 	  </main>
 	  <footer>
 	    <div class="container">
 	      <section class="footer-social">
-	        <div class="footer-social">
-	        	<a class="social-btn-tw" href="#" target="_blank">Твитер</a>
-	          <a class="social-btn-in" href="#" target="_blank">Инстраграм</a>
-	          <a class="social-btn-fb" href="#" target="_blank">Фейсбук</a>
-	         	<a class="social-btn-vk" href="#" target="_blank">Вконтакте</a>
-	        </div>
+	        <a class="social-btn-tw" href="#" target="_blank">Твитер</a>
+	        <a class="social-btn-in" href="#" target="_blank">Инстраграм</a>
+	        <a class="social-btn-fb" href="#" target="_blank">Фейсбук</a>
+	        <a class="social-btn-vk" href="#" target="_blank">Вконтакте</a>
 	      </section>
 	      <section class="footer-info-box">
-	         <ul>
-	         	<li>
-	         		<a href="#">Для поставщиков</a>
+	        <ul>
+	          <li>
+	         	  <a href="#">Для поставщиков</a>
 	         	</li>
 	         	<li>
-	         		<a href="#">О производстве</a>
+	         	  <a href="#">О производстве</a>
 	         	</li>
 	         	<li>
-	         		<a href="#">Наши документы</a>
+	         	  <a href="#">Наши документы</a>
 	         	</li>
 	         	<li>
-	         		<a href="#">Экологические стандарты</a>
+	         	  <a href="#">Экологические стандарты</a>
 	         	</li>
-	         </ul>
+	        </ul>
 	      </section>
 	      <section class="footer-copyright">
-	          <img src="http://placehold.it/150x100" width="150" height="100" alt="HTML академия">
-	          <span>Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a> © 2016</span>
+	        <img src="http://placehold.it/150x100" width="150" height="100" alt="HTML академия">
+	        <div>Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a> © 2016</div>
 	      </section>
 	    </div>
 	  </footer>
