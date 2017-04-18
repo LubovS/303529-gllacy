@@ -32,7 +32,7 @@
 		        <a class="search-icon" href="#"><img src="#" alt="Поиск"></a>
 		        <div class="search-inner">
 		          <form action="#" method="get">
-		            <input type="search" name="search">
+		            <input type="search" name="search" placeholder="Что ищем?">
 		            <button type="submit"></button>
 		          </form>
 		        </div>
@@ -40,13 +40,40 @@
 		      <div class="login">
 		        <a class="login-icon" href="#"><img src="#" alt="Логин"></a>
 		        <div class="login-inner">
-		          <a href="#">Вход</a>
+		          <form action="#" method="get">
+                <input type="email" name="email" placeholder="Электронная почта" required>
+                <input type="password" name="password" placeholder="Пароль">
+                <button class="btn" type="submit">Войти</button>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+		          </form>
 		        </div>
 		      </div>
 		      <div class="basket-data">
 		        <a class="basket-icon" href="#"><img src="#" alt="Корзина"></a>
 		        <div class="basket-inner">
-		          <a href="#">Корзина</a>
+		          <form action="#" method="get">
+			          <table class=price-list>
+			          	<tr>
+			          		<td></td>
+			          		<td></td>
+			          		<td></td>
+			          		<td></td>
+			          		<td></td>
+			          	</tr>
+			          	<tr>
+			          		<td></td>
+			          		<td></td>
+			          		<td></td>
+			          		<td></td>
+			          		<td></td>
+			          	</tr>
+			          	<tr>
+			          		<td class="final price" colspan="5">Итого: 750 руб.</td>
+			          	</tr>
+                  <button class="btn" type="submit">Оформить заказ</button>
+			          </table>
+			        </form>
 		        </div>
 		      </div>
 		      <div class="info-box">
@@ -63,9 +90,7 @@
 	  <main class="container">
 	    <div class="breadcrumbs">
 	      <a href="#">Главное</a>
-	      <div class="quotes"></div> 
-	      <a href="#">Каталог</a>
-	      <div class="quotes"></div>  
+	      <a href="#">Каталог</a> 
 	      <div class="last">Сливочное</div>
 	    </div>
       <div class="catalog-wrapper">
