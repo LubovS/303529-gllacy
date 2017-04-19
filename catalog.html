@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -10,7 +11,7 @@
         <div class="header-left">
           <div class="site-logo">
             <a href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Глейсишоп">
+              <img src="img/Logo.png" width="154" height="64" alt="Глейсишоп">
             </a>
           </div>
           <nav class="main-navigation">
@@ -45,7 +46,7 @@
         </div>
         <div class="header-right">
           <div class="search">
-            <a class="search-icon" href="#"><img src="#" alt="Поиск"></a>
+            <a class="search-icon" href="#">Поиск</a>
             <div class="search-inner">
               <form action="#" method="get">
                 <input type="search" name="search" placeholder="Что ищем?">
@@ -54,11 +55,11 @@
             </div>
           </div>
           <div class="login">
-            <a class="login-icon" href="#"><img src="#" alt="Логин"></a>
+            <a class="login-icon" href="#">Логин</a>
             <div class="login-inner">
               <form action="#" method="get">
                 <input type="email" name="email" placeholder="Электронная почта" required>
-                <input type="password" name="password" placeholder="Пароль">
+                <input type="password" name="password" placeholder="Пароль" required>
                 <button class="btn" type="submit">Войти</button>
                 <a href="#">Забыли пароль?</a>
                 <a href="#">Новая регистрация</a>
@@ -66,30 +67,28 @@
             </div>
           </div>
           <div class="basket-data">
-            <a class="basket-icon" href="#"><img src="#" alt="Корзина"></a>
+            <a class="basket-icon" href="#">Корзина</a>
             <div class="basket-inner">
-              <form action="#" method="get">
-                <table class=price-list>
-                  <tr>
-                    <td><img src="#" alt=""></td>
-                    <td><img src="#" alt="Пломбир с апельсиновым джемом"></td>
-                    <td>Пломбир с апельсиновым джемом</td>
-                    <td>1,5 кг x 200 руб.</td>
-                    <td>300 руб.</td>
-                  </tr>
-                  <tr>
-                    <td><img src="#" alt=""></td>
-                    <td><img src="#" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td>1,5 кг x 300 руб.</td>
-                    <td>450 руб.</td>
-                  </tr>
-                  <tr>
-                    <td class="final price" colspan="5">Итого: 750 руб.</td>
-                  </tr>
-                </table>
-                <button class="btn" type="submit">Оформить заказ</button>
-              </form>
+              <table class=price-list>
+                <tr>
+                  <td class="cross"></td>
+                  <td><img src="img/ice-1-mini.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг x 200 руб.</td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td class="cross"></td>
+                  <td><img src="img/ice-2-mini.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг x 300 руб.</td>
+                  <td>450 руб.</td>
+                </tr>
+                <tr>
+                  <td class="final price" colspan="5">Итого: 750 руб.</td>
+                </tr>
+              </table>
+              <a class="btn" href="#">Оформить заказ</a>
             </div>
           </div>
           <div class="info-box">
@@ -107,7 +106,7 @@
       <div class="breadcrumbs">
         <a href="#">Главное</a>
         <a href="#">Каталог</a> 
-        <div class="last">Сливочное</div>
+        <a>Сливочное</a>
       </div>
       <div class="catalog-wrapper">
         <div class="main-title">
@@ -171,7 +170,7 @@
         <section class="catalog-items">
           <article class="item">
             <div class="item-img">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное с апельсиновым джемом и  цитрусовой стружкой">
+              <img src="img/ice-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и  цитрусовой стружкой">
             </div>
             <div class="price">310 р/кг</div>
             <h2>Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
@@ -179,7 +178,7 @@
           </article> 
           <article class="item">
             <div class="item-img">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное-кофейное с кусочками шоколада">
+              <img src="img/ice-2.jpg" width="267" height="267" alt="Сливочное-кофейное с кусочками шоколада">
             </div>
             <div class="price">380 р/кг</div>
             <h2>Сливочное-кофейное с кусочками шоколада</h2>
@@ -187,7 +186,7 @@
           </article> 
           <article class="item">
             <div class="item-img">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <img src="img/ice-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </div>
             <div class="price">355 р/кг</div>
             <h2>Сливочно-клубничное с присыпкой из белого шоколада</h2>
@@ -195,7 +194,7 @@
           </article> 
           <article class="item">
             <div class="item-img">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное крем-брюле с карамельной подливкой">
+              <img src="img/ice-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             </div>
             <div class="price">415 р/кг</div>
             <h2>Сливочное крем-брюле с карамельной подливкой</h2>
@@ -203,7 +202,7 @@
           </article> 
           <article class="item">
             <div class="item-img">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное с брусничным джемом">
+              <img src="img/ice-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
             </div>
             <div class="price">325 р/кг</div>
             <h2>Сливочное с брусничным джемом</h2>
@@ -211,7 +210,7 @@
           </article> 
           <article class="item">
             <div class="item-img">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочно-черничное с цельными ягодами черники">
+              <img src="img/ice-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
             </div>
             <div class="price">410 р/кг</div>
             <h2>Сливочно-черничное с цельными ягодами черники</h2>
@@ -219,7 +218,7 @@
           </article> 
           <article class="item">
             <div class="item-img">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное-лимонное с карамельной присыпкой">
+              <img src="img/ice-7.jpg" width="267" height="267" alt="Сливочное-лимонное с карамельной присыпкой">
             </div>
             <div class="price">375 р/кг</div>
             <h2>Сливочное-лимонное с карамельной присыпкой</h2>
@@ -227,7 +226,7 @@
           </article> 
           <article class="item">
             <div class="item-img">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное с шоколадной стружкой">
+              <img src="img/ice-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
             </div>
             <div class="price">320 р/кг</div>
             <h2>Сливочное с шоколадной стружкой</h2>
@@ -235,7 +234,7 @@
           </article> 
           <article class="item">
             <div class="item-img">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочно-ванильное с кусочками шоколада">
+              <img src="img/ice-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
             </div>
             <div class="price">440 р/кг</div>
             <h2>Сливочно-ванильное с кусочками шоколада</h2>
@@ -243,7 +242,7 @@
           </article> 
           <article class="item">
             <div class="item-img">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное с ментоловым сиропом">
+              <img src="img/ice-10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
             </div>
             <div class="price">435 р/кг</div>
             <h2>Сливочное с ментоловым сиропом</h2>
@@ -251,7 +250,7 @@
           </article>
           <article class="item">
             <div class="item-img">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное с кусочками черного  шоколада">
+              <img src="img/ice-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного  шоколада">
             </div>
             <div class="price">355 р/кг</div>
             <h2>Сливочное с кусочками черного  шоколада</h2>
@@ -259,7 +258,7 @@
           </article>
           <article class="item">
             <div class="item-img">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное с ментоловым сиропом">
+              <img src="img/ice-12.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
             </div>
             <div class="price">420 р/кг</div>
             <h2>Сливочное с мятным сиропом</h2>
@@ -304,8 +303,8 @@
           </ul>
         </section>
         <section class="footer-copyright">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="HTML академия">
-          <span>Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a> © 2016</span>
+          <img src="img/logo-html.png" width="108" height="38" alt="HTML академия">
+          <span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2016</span>
         </section>
       </div>
     </footer>  
