@@ -44,7 +44,6 @@ body {
 html,
 body {
   min-width: 1200px;
-  min-height: 1650px;
   margin: 0;
   padding: 0;
 }
@@ -65,12 +64,27 @@ span {
   display: block;
 }
 
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding-top:10px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-bottom:12px;
+  font-size:18px;
+  line-height:24px;
+  font-weight:700;
+}
+
 .site-logo {
   float: left;
   width: 154px;
-  height: 64px;
-  padding-top: 9px;
+  height: 73px;
   margin-right: 25px;
+}
+
+.site-logo img {
+  margin-top: 9px;
 }
 
 .main-header {
@@ -83,7 +97,7 @@ span {
   min-height: 73px;
 }
 
-.main-navigation li {
+.main-navigation {
   font-size: 0px;
 }
 
@@ -110,7 +124,7 @@ span {
   margin-top: 27px;
 }
 
-.header-right-top div {
+.header-right-top {
   font-size: 0px;
 }
 
@@ -148,8 +162,9 @@ span {
   padding-top: 277px;
 }
 
-.slider li {
-  display: block;
+.slider ul {
+  list-style-type: none;
+  padding: 0px;
 }
 
 .slide-back {
@@ -162,29 +177,18 @@ span {
   font-size: 60px;
   line-height: 60.35px;
   font-weight: 700;
-  margin-left: 179px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sl-center {
   text-align: center;
 }
 
-.btn {
-  display: inline-block;
-  vertical-align: top;
-  padding-top:10px;
-  padding-left: 23px;
-  padding-right: 23px;
-  padding-bottom:12px;
-  font-size:18px;
-  line-height:24px;
-  font-weight:700;
-}
-
 .sl-btn {
-  width: 198px;
-  padding-left: 41px;
-  padding-right: 41px;
-  margin-left: 393px;
+  padding-left: 42px;
+  padding-right: 42px;
   margin-top: 29px;
-  background-color: beige;
 }
 
 .sl-btn {
@@ -197,7 +201,7 @@ span {
 .popular,
 .special-promotion,
 .slider,
-.wrapper {
+.news {
   margin-bottom: 40px;
 }
 
@@ -218,6 +222,7 @@ span {
 
 .banner h2{
   width: auto;
+  margin: 0;
   margin-top: 15px;
   padding-left: 19px;
   margin-bottom: 16px;
@@ -239,7 +244,19 @@ span {
   background-color:chartreuse;
 }
 
-.item {
+.special-promotion .content-left {
+  background-image: url(../img/crimson-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.special-promotion .content-right {
+  background-image: url(../img/chocolate-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+} 
+
+.catalog {
   font-size: 0px;
 }
 
@@ -248,7 +265,7 @@ span {
   vertical-align:top;
   width: 267px;
   min-height: 321px;
-  margin-right: 22px;
+  margin-right: 26px;
   font-size: 16px;
   margin-bottom: 38px;
   text-align:center;
@@ -267,6 +284,7 @@ span {
   line-height: 22px;
   font-weight: 500;
   width: 260px;
+  margin: 0;
   margin-top: 7px;
   margin-bottom: 0px;
   margin-left: 4px;
@@ -279,7 +297,6 @@ span {
 
 .features-title {
   widht: auto;
-  min-height: 54px;
   padding-left: 20px;
   margin-bottom: 10px;
 }
@@ -305,28 +322,26 @@ span {
   padding-bottom: 10px;
 }
 
-.post-new,
-.follow-by-email {
-  min-height: 198px;  
-}
-
 .post-new {
+  min-height: 197px;
   padding-top: 23px;
-  padding-left: 20px;
+  padding-left: 20px;  
 }
- 
-.post-new h2 {
-  font-size: 0px;
+
+.follow-by-email {
+  min-height: 202px;  
+}
+
+.post-new-title {
+  width: 292px;
 }
 
 .post-new h2 {
-  display: inline-block;
-  vertical-align: top;
   width: 292px;
-  background-color:#e68080;
+  margin: 0;
+  margin-top: 4px;
   font-size: 24px;
   white-space: pre-wrap;
-  margin-top: 4px;
 }
 
 .follow-by-email {
@@ -340,10 +355,6 @@ span {
 
 .follow-by-email-form {
   margin-top: 33px;
-}
-
-.follow-by-email-address,
-.email-btn {
   font-size: 0px;
 }
 
@@ -360,16 +371,20 @@ span {
 }
 
 .index-content {
-  min-height: 368px;
-  padding-top: 60px;
+  padding-top: 61px;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 61px
 }
 
 .index-content-right {
   margin-left: 845px;
   width: 276px;
   min-height: 277px;
-  padding-top: 30px;
+  padding-top: 29px;
   padding-left: 24px;
+  background-color: rgba(255, 255, 255, 1)
 }
 
 .index-content-title {
@@ -454,14 +469,18 @@ span {
   line-height: 16px;
 }
 
+.breadcrumbs{ 
+  min-height: 16px;
+}
+
 h1 {
+  min-height: 41px;
   margin: 0px;
   margin-top: 4px;
   margin-bottom: 26px;
 }
 
 .filter-catalog {
-  min-height: 137px;
   margin-bottom: 24px;
 }
 
@@ -471,7 +490,7 @@ legend {
   font-weight: 500;
 }
 
-.filter-box {
+.filter-catalog {
   font-size: 0px;
 }
 
@@ -482,7 +501,7 @@ legend {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  margin-right: 9px;
+  margin-right: 12px;
   margin-bottom: 13px;
 }
 
@@ -526,6 +545,12 @@ legend {
 
 .pagination a {
   margin-right: 20px;
+}
+
+.features,
+.news,
+.index-content-right  {
+  color: rgba(50, 50 , 50, 1)
 }
 
 /*   для себя и все бекграунд тоже
