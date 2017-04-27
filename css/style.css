@@ -60,9 +60,15 @@ body {
   clear: both;
 }
 
-span {
+.info-box span,
+.post-new span,
+.index-content-right span,
+.footer-copyright span,
+.price span  {
   display: block;
 }
+
+
 
 .btn {
   display: inline-block;
@@ -94,7 +100,6 @@ span {
 .main-navigation {
   float: left;
   width: 675px;
-  min-height: 73px;
 }
 
 .main-navigation {
@@ -115,12 +120,10 @@ span {
   float: right;
   position: relative;
   width: 267px;
-  min-height: 73px
 }
 
 .header-right-top {
   width: auto;
-  min-height: 33px;
   margin-top: 27px;
 }
 
@@ -167,13 +170,9 @@ span {
   padding: 0px;
 }
 
-.slide-back {
-  min-height: 215px;
-}
 
 .sl-text {
   width: 708px;
-  min-height: 109px;
   font-size: 60px;
   line-height: 60.35px;
   font-weight: 700;
@@ -216,10 +215,6 @@ span {
   width: 560px;
 }
 
-.banner {
-  min-height: 214px;
-}
-
 .banner h2{
   width: auto;
   margin: 0;
@@ -241,6 +236,7 @@ span {
 }
 
 .banner-btn {
+  margin-bottom: 24px;
   background-color:chartreuse;
 }
 
@@ -264,7 +260,6 @@ span {
   display: inline-block;
   vertical-align:top;
   width: 267px;
-  min-height: 321px;
   margin-right: 26px;
   font-size: 16px;
   margin-bottom: 38px;
@@ -291,8 +286,9 @@ span {
 }
 
 .features {
-  min-height: 282px;
   padding-top: 22px;
+  background-color: chartreuse;
+  padding-bottom: 14px;
 }
 
 .features-title {
@@ -304,14 +300,12 @@ span {
 .left-feature-item {
   float: left;
   width: 539px;
-  min-height: 187px; 
   margin-left: 20px;  
 }
 
 .right-feature-item {
   float: right;
   width: 538px;
-  min-height: 187px;
   margin-right: 20px;
 }
 
@@ -323,13 +317,10 @@ span {
 }
 
 .post-new {
-  min-height: 197px;
+  background-color: aquamarine;
   padding-top: 23px;
-  padding-left: 20px;  
-}
-
-.follow-by-email {
-  min-height: 202px;  
+  padding-left: 20px;
+  padding-bottom: 81px;
 }
 
 .post-new-title {
@@ -345,12 +336,15 @@ span {
 }
 
 .follow-by-email {
-  padding-top: 18px;
+  background-color: #d60913;
+  padding-top: 34px;
   padding-left: 26px;
+  padding-bottom: 37px;
 }
 
 .follow-by-email p {
   width: 508px;
+  margin: 0;
 }
 
 .follow-by-email-form {
@@ -381,10 +375,10 @@ span {
 .index-content-right {
   margin-left: 845px;
   width: 276px;
-  min-height: 277px;
-  padding-top: 29px;
+  padding-top: 30px;
   padding-left: 24px;
-  background-color: rgba(255, 255, 255, 1)
+  padding-bottom: 30px;
+  background-color: rgba(255, 255, 55, 1)
 }
 
 .index-content-title {
@@ -434,28 +428,25 @@ span {
 }
 
 .main-footer {
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   background-color: #ff7fb4
 }
 
 .footer-social {
   float: left;
   width: 267px;
-  min-height: 66px;
   margin-right: 26px;
 }
 
 .footer-info-box {
   float: left;
   width: 560px;
-  min-height: 66px;
 }
 
 .footer-copyright {
   float: right;
   width: 267px;
-  min-height: 66px;
 }
 
 .footer-info-box {
@@ -470,17 +461,17 @@ span {
 }
 
 .breadcrumbs{ 
-  min-height: 16px;
+  background-color: aquamarine;
 }
 
 h1 {
-  min-height: 41px;
   margin: 0px;
   margin-top: 4px;
   margin-bottom: 26px;
 }
 
 .filter-catalog {
+  background-color: aquamarine;
   margin-bottom: 24px;
 }
 
@@ -490,9 +481,12 @@ legend {
   font-weight: 500;
 }
 
+/* Пока не знаю как сделать фильтр*/
+
 .filter-catalog {
   font-size: 0px;
 }
+
 
 .filter-box,
 .btn-filter {
@@ -502,31 +496,27 @@ legend {
   line-height: 18px;
   font-weight: 700;
   margin-right: 12px;
-  margin-bottom: 13px;
+  margin-bottom: 20px;
 }
 
 .sorting-items-box fieldset {
   background-color:burlywood;
   width: 164px;
-  min-height: 41px;
 }
 
 .price-filter-interval {
   background-color:#c532b3;
   width: 219px;
-  min-height: 41px;
 }
 
 .product-fat-content-box fieldset {
   background-color:burlywood;
   width: 389px;
-  min-height: 41px;
 }
 
 .filler-ice-cream-box fieldset {
   background-color: blue;
   width: 673px;
-  min-height: 41px;
 }
 
 .btn-filter {
@@ -534,13 +524,12 @@ legend {
 }
 
 .pagination {
-  min-height: 26px;
   text-align: right;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500px;
   margin-top: 47px;
-  margin-bottom: 25px;
+  margin-bottom: 37px;
 }
 
 .pagination a {
@@ -553,8 +542,7 @@ legend {
   color: rgba(50, 50 , 50, 1)
 }
 
-/*   для себя и все бекграунд тоже
-body > * {
+/*  {
   background: rgba(0, 128, 0, 0.2);
   box-shadow: 0 0 0 3px green;
 }
