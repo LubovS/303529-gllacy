@@ -635,7 +635,7 @@ body > input[type="radio"] {
 .item-img {
   border-radius: 50%;
   position: relative;
-  z-index: 30;
+  z-index: 1;
 }
 
 .item {
@@ -693,7 +693,6 @@ body > input[type="radio"] {
   content: "";
   position: absolute;
   display: none;
-  z-index: 10;
   background-color: rgba(255, 255, 255, 0.3);
   top: -5px;
   left: -12px;
@@ -726,6 +725,10 @@ body > input[type="radio"] {
 .item:hover::after,
 .item:hover .btn {
   display: block;
+}
+
+.item:hover {
+  z-index: 50;
 }
 
 .item:hover a {
