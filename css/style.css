@@ -449,7 +449,7 @@ body {
   text-decoration: underline;     
 }
 
-.header-right-top .basket-icon {
+.header-right-top .basket {
   display: block;
   width: 73px;
   height: 32px;
@@ -457,8 +457,21 @@ body {
   padding-left: 45px;
 }
 
-.header-right-top .basket-icon::before {
+.header-right-top .basket-inner {
+  color: rgba(50, 50, 50, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.header-right-top .basket-off::before {
   background-position: -27px -488px;
+  width: 21px;
+  height: 20px;
+  top: 6px;
+  left: 17px;;
+}
+
+.header-right-top .basket-on::before {
+  background-position: -3px -488px;
   width: 21px;
   height: 20px;
   top: 6px;
@@ -621,6 +634,8 @@ body > input[type="radio"] {
 
 .item-img {
   border-radius: 50%;
+  position: relative;
+  z-index: 30;
 }
 
 .item {
@@ -634,6 +649,18 @@ body > input[type="radio"] {
   margin-bottom: 38px;
 }
 
+.popular-item::before {
+  content:"";
+  position: absolute;
+  z-index: 35;
+  width: 61px;
+  height: 61px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/hit.png);
+  background-repeat: no-repeat;
+}
+
 .popular-item {
   margin-bottom: 0;
 }
@@ -643,6 +670,8 @@ body > input[type="radio"] {
 }
 
 .item .item-title {
+  position: relative;
+  z-index: 30;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -654,13 +683,28 @@ body > input[type="radio"] {
 
 .item .btn {
   position: absolute;
-  display: block;
+  z-index: 20;
+  display: none;
   bottom: -54px;
   left: 28px;
 }
 
+.item::after {
+  content: "";
+  position: absolute;
+  display: none;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: -5px;
+  left: -12px;
+  right: -12px;
+  bottom: -74px;
+  border-radius: 8px;
+}
+
 .item .price {
   position: absolute;
+  z-index: 40;
   font-size: 30px;
   line-height: 40px;
   font-weight: 700;
@@ -677,6 +721,15 @@ body > input[type="radio"] {
   background-image: url("../img/r.png");
   background-repeat: no-repeat;
   background-position: 80px 12px;
+}
+
+.item:hover::after,
+.item:hover .btn {
+  display: block;
+}
+
+.item:hover a {
+  border-bottom: none;
 }
 
 .features {
