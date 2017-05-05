@@ -1126,16 +1126,18 @@ legend {
 }
 
 .sorting-items-box select{
-  min-width: 194px;
+  width: 194px;
   height: 36px;
   padding: 0 33px 0 15px;
+  position: relative;
+  z-index: 10;
   margin: 0;
   font-size: 16px;
   font-weight: 500;
   font-family: inherit;
   line-height: 18px;
   color: rgba(255, 255, 255, 1);
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: transparent;
   border: none;
   border-radius: 18px;
   outline: none;
@@ -1157,6 +1159,7 @@ legend {
 }
 
 .sorting-items-box .form-btn {
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
   position: relative;
 }
@@ -1164,15 +1167,19 @@ legend {
 .sorting-items-box .form-btn::before {
   content: "";
   position: absolute;
+  z-index: 0;
   top: 15px;
   right: 15px;
   border: 4px solid transparent;  
   border-top: 6px solid rgba(255, 255, 255, 1);
 }
 
+.sorting-items-box .form-btn:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
 .sorting-items-box select:hover {
   color: rgba(50, 50, 50, 1);
-  background-color: rgba(255, 255, 255, 1);
 }
 
 .sorting-items-box .form-btn:hover::before {
