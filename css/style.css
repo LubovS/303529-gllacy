@@ -450,12 +450,17 @@ body {
 }
 
 .login-inner a {
-  float: left;
   margin: 0;
   font-size: 13px;
   line-height: 22px;
   color: rgba(50, 50, 50, 1);
-  text-decoration: underline;     
+  border-bottom: 1px solid rgba(50, 50, 50, 0.3);    
+}
+
+.login-inner a:hover,
+.login-inner a:active {
+  color: rgba(232, 77, 55, 1);
+  border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
 
 .header-right-top .basket > a {
