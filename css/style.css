@@ -42,9 +42,6 @@ body {
 }
 
 .wrapper-gradient {
- background: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(132, 157, 143, 1));
- background: -moz-linear-gradient(rgba(255, 255, 255, 0.2), rgba(132, 157, 143, 1));
- background: -o-linear-gradient(rgba(255, 255, 255, 0.2), rgba(132, 157, 143, 1));
  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(132, 157, 143, 1));
 }
 
@@ -650,6 +647,10 @@ body > input[type="radio"] {
   cursor: pointer;
 }
 
+.slider-controls label:hover {
+  background-color: rgba(248, 247, 244, 0.4);
+}
+
 .slider ul {
   list-style: none;
   margin: 0;
@@ -823,7 +824,6 @@ body > input[type="radio"] {
   font-size: 30px;
   line-height: 40px;
   font-weight: 700;
-  -webkit-filter: drop-shadow(0 1px 2px rgba(49, 50, 53, 0.50));
   filter: drop-shadow(0 1px 2px rgba(49, 50, 53, 0.50));
   top: 204px;
   left: 0px; 
@@ -1124,7 +1124,7 @@ legend {
 }
 
 .sorting-items-box {
-  min-width: 194px;
+  width: 194px;
 }
 
 .price-filter-interval {
@@ -1143,6 +1143,7 @@ legend {
   font-family: inherit;
   line-height: 18px;
   color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0);
   background-color: transparent;
   border: none;
   border-radius: 18px;
@@ -1154,7 +1155,7 @@ legend {
 }
 
 .sorting-items-box select::-ms-expand {
-    display: none
+  display: none
 }
 
 .sorting-items-box option {
