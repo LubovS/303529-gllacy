@@ -50,17 +50,26 @@
                 <a class="search-icon menu-icon" href="#">Поиск</a>
                 <div class="search-inner">
                   <form action="#" method="get">
-                    <input type="search" name="search" placeholder="Что ищем?">
+                    <div class="control">
+                      <input type="text" name="search" placeholder="Что ищем?" required>
+                      <label for="search">Что ищем?</label>
+                    </div>
                     <button type="submit"></button>
                   </form>
                 </div>
               </li>
               <li class="login">
                 <a class="login-icon menu-icon" href="#">Вход</a>
-                <div class="login-inner">
+                <div class="login-inner clearfix">
                   <form action="#" method="get">
-                    <input type="email" name="email" placeholder="Электронная почта" required>
-                    <input type="password" name="password" placeholder="Пароль" required>
+                    <div class="control">
+                      <input type="text" name="email" placeholder="Электронная почта" required>
+                      <label for="Электронная почта"">Электронная почта</label>
+                    </div>
+                    <div class="control">
+                      <input type="text" name="password" placeholder="Пароль" required>
+                      <label for="password">Пароль</label>
+                    </div>
                     <button class="btn" type="submit">Войти</button>
                     <a href="#">Забыли пароль?</a>
                     <a href="#">Новая регистрация</a>

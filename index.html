@@ -53,17 +53,26 @@
                 <a class="search-icon menu-icon" href="#">Поиск</a>
                 <div class="search-inner">
                   <form action="#" method="get">
-                    <input type="search" name="search" placeholder="Что ищем?">
+                    <div class="control">
+                      <input type="text" name="search" placeholder="Что ищем?" required>
+                      <label for="search">Что ищем?</label>
+                    </div>
                     <button type="submit"></button>
                   </form>
                 </div>
               </li>
               <li class="login">
                 <a class="login-icon menu-icon" href="#">Вход</a>
-                <div class="login-inner">
+                <div class="login-inner clearfix">
                   <form action="#" method="get">
-                    <input type="email" name="email" placeholder="Электронная почта" required>
-                    <input type="password" name="password" placeholder="Пароль" required>
+                    <div class="control">
+                      <input type="text" name="email" placeholder="Электронная почта" required>
+                      <label for="Электронная почта"">Электронная почта</label>
+                    </div>
+                    <div class="control">
+                      <input type="text" name="password" placeholder="Пароль" required>
+                      <label for="password">Пароль</label>
+                    </div>
                     <button class="btn" type="submit">Войти</button>
                     <a href="#">Забыли пароль?</a>
                     <a href="#">Новая регистрация</a>
@@ -203,8 +212,9 @@
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <div class="follow-by-email-form">
                   <form action="#" method="post">
-                    <div class="follow-by-email-address">
-                      <input type="email" name="email" placeholder="Электронная почта">
+                    <div class="follow-by-email-address control">
+                      <input type="text" name="email" placeholder="Электронная почта" required>
+                      <label for="email">Электронная почта</label>
                     </div>
                     <div class="email-btn">
                       <button class="btn" type="submit">Отправить</button>
@@ -224,18 +234,11 @@
               <span class="content-phones">Для заказов по телефону:</span>
               <span class="phones"><a class="call" href="tel:+78124502525">8 812 450-25-25</a></span>
               <span class="working-time">(с 10 до 20 ежедневно)</span>
-              <a class="btn" href="#">Форма обратной связи</a>
-              <!-- Я думаю пока лучше спрятать
-              <div class="feedback-form-inner">
-                <form action="#" method="get">
-                  <input type="text" name="your-name" placeholder="Как вас зовут?" required>
-                  <input type="text" name="email" placeholder="Ваша почта для ответа?" required>
-                  <textarea name="your-text" rows="6" required>Напишите что-нибудь...</textarea>
-                  <button class="btn" type="submit">Отправить</button>
-                </form>  
-              </div>
-              -->
+              <a class="btn feedback" href="#">Форма обратной связи</a>
             </div>
+          </div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651525!2d30.32089461639195!3d59.938794181876354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1494164198611" width="1200" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
       </main>
@@ -263,6 +266,27 @@
           </section>
         </div>
       </footer>
-    </div>  
+      <div class="feedback-form-inner clearfix">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <p>Мы обязательно вам ответим!</p>
+        <form class="feedback-form" action="#" method="get">
+          <div class="control">
+            <input type="text" name="your-name" placeholder="Как вас зовут?" required>
+            <label for="your-name">Как вас зовут?</label>
+          </div>
+          <div class="control">
+            <input type="text" name="email" placeholder="Ваша почта для ответа?" required>
+            <label for="email">Ваша почта для ответа?</label>
+          </div>
+          <div class="control">
+            <textarea name="your-text" placeholder="Напишите что-нибудь..." required></textarea>
+            <label for="your-text">Напишите что-нибудь...</label>
+          </div>
+          <button class="btn" type="submit">Отправить</button>
+        </form> 
+      </div>
+      <div class="modal-overlay"></div> 
+    </div>
+    <script src="js/script.js"></script> 
   </body>
 </html>
