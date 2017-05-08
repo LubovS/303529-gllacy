@@ -387,7 +387,7 @@ body {
 }
 
 .search-inner button {
-  display: none;
+  visibility: hidden;
 }
 
 .header-right-top .login-icon {
