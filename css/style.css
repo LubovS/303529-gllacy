@@ -877,10 +877,6 @@ body > input[type="radio"] {
   z-index: 50;
 }
 
-.item:hover a {
-  border-bottom: none;
-}
-
 .features {
   padding-top: 23px;
   padding-right: 20px;
@@ -1866,6 +1862,13 @@ legend {
   color: rgba(255, 188, 158, 1);
 
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.item:hover a,
+.item:hover a:hover,
+.item:hover a:active {
+  color: inherit;
+  border-bottom: none;
 }
 
 .breadcrumbs a:last-child,
